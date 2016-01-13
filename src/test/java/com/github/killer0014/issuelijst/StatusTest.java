@@ -5,15 +5,13 @@ import org.junit.Test;
 
 public class StatusTest {
 
-@Test
+	@Test
+	public void testStatus(){
+		Status status = new Status("open");
 
-public void testStatus(){
+		assertNotNull(status);
+		assertEquals("open", status.getName());
 
-Status status = new Status("open");
-
-
-assertNotNull(status);
-
-assertEquals("open", status.getName());
-
+	}
+	
 }
